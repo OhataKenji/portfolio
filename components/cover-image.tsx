@@ -1,6 +1,5 @@
 import cn from 'classnames'
 import Link from 'next/link'
-import Image from 'next/image'
 import getConfig from "next/config";
 
 const { publicRuntimeConfig } = getConfig();
@@ -14,7 +13,7 @@ type Props = {
 const CoverImage = ({ title, src, slug }: Props) => {
   const basePath = (publicRuntimeConfig && publicRuntimeConfig.basePath) || "";
   const image = (
-    <Image
+    <img
       src={basePath + src}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-sm', {

@@ -16,15 +16,25 @@ ogImage:
 - 使用技術: TypeScript, Node, React, GitHub Actions, GitLab CI/CD
 
 シナリオ執筆用にiPadやパソコンでの作動を見越してCLIとWebの両方で動かせるようにできるTypeScriptを選んだ。
+VS Code用にシンタクックスハイライトを作成した。(https://marketplace.visualstudio.com/items?itemName=OhataKenji.stlap-vscode)
+シンタックスハイライトという概念はシナリオ執筆にはあまりない。
 
 # 技術的な取り組み
 
-Language Serverを作成することを見越してTolerant Parserとして実装することでエラーをわかりやすくした。
+## プレーンテキストベースであることについて
+シナリオ作成用のソフトウェアは数多あるが、
+そのソフトウェア独自の拡張子でファイルを保存するものが多いため、
+今後のメンテナンス状況では使えなくなる危険性がある。
 
-テキストベースにすること
-ソフトウェア独自の拡張子で、今後全く使えなくなるといった可能性を低くした。
+プレーンテキストベースにすることで二度と開けないと言った状況や、
+移行しにくい、という状況を減らすことを狙った。
 
-シナリオや作文の世界にはないシンタクックスハイライトの作成(VS Code)。
+## Tolerant Parser
+
+StlapはLanguage Serverを作成すること(ひいてはVS Codeなどでの言語支援)
+を見越してTolerant Parserの考えを利用して実装しています。
+Tolerant Parserはパース中にエラーが起きても出来るだけパースを続けるように振る舞います。
+これによってコードのエラーがわかりやすくなります。
 
 # エピソード
 

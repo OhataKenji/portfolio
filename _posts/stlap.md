@@ -11,6 +11,8 @@ ogImage:
 漫画シナリオをマークダウン風に書く言語。コメントなどプログラミングでは一般的だが小説執筆では一般的でない機能を提供している。
 またフラグ管理機能でシーン同士の対応関係も保証されるようになっている。
 
+デモサイト: https://ohatakenji.gitlab.io/stlap-demo/
+
 - 開発期間: 2021/9 ~ 2021/12
 - 個人開発
 - 使用技術: TypeScript, Node, React, GitHub Actions, GitLab CI/CD

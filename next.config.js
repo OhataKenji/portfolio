@@ -5,6 +5,9 @@ const isProd = process.env.NODE_ENV === "production"
 const nextConfig = {
     assetPrefix: isProd ? "/portfolio" : "",
     basePath: process.env.GITHUB_ACTIONS ? "/portfolio" : "",
+    publicRuntimeConfig: {
+        basePath: process.env.GITHUB_ACTIONS ? "/portfolio" : "",
+    },
     trailingSlash: true,
 }
 

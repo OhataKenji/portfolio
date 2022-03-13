@@ -2,9 +2,9 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "build": "NODE_ENV=production next build",
-    "export": "NODE_ENV=production next export",
-    "start": "NODE_ENV=production next start",
+    "build": "next build",
+    "export": "next export",
+    "start": "next start",
     "typecheck": "tsc"
   },
   "dependencies": {

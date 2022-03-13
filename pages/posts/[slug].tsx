@@ -33,15 +33,14 @@ const Post = ({ post, morePosts }: Props) => {
             <article className="mb-32">
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                    {post.title} | Ken's Protfolio
                 </title>
                 <meta property="og:image" content={post.ogImage.url} />
               </Head>
               <PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
-                date={post.date}
-                author={post.author}
+                  date={post.date}
               />
               <PostBody content={post.content} />
             </article>
@@ -65,7 +64,6 @@ export async function getStaticProps({ params }: Params) {
     'title',
     'date',
     'slug',
-    'author',
     'content',
     'ogImage',
     'coverImage',

@@ -2,14 +2,20 @@
 title: 'Gras'
 excerpt: 'ソフトウェアアーキテクチャ的にシナリオを書くためのマインドマップ風のアイディアプロセッサー
 書きたい要件に対してシーンを実装するように構成し、シーンの順番を整えていくように使う。'
-coverImage: '/portfolio/assets/blog/dynamic-routing/cover.jpg'
+coverImage: '/assets/product/gras/cover.png'
 date: '2022-01-01T12:00:00.000Z'
 ogImage:
-  url: '/portfolio/assets/blog/dynamic-routing/cover.jpg'
+  url:  '/assets/product/gras/cover.png'
 ---
 
-ソフトウェアアーキテクチャ的にシナリオを書くためのマインドマップ風のアイディアプロセッサー
-書きたい要件に対してシーンを実装するように構成し、
-シーンの順番を整えていくように使う
+ソフトウェアアーキテクチャ的にシナリオを書くためのマインドマップ風のアイディアプロセッサー。
+書きたい要件に対してシーンを実装するように構成し、シーンの順番を整えていくように使います。
+文法に沿って記述されたシナリオをパースしてdot言語として出力します。
+Graphvizを使うと画像として表示できます。
 
-dot言語風の文法で描かれたシナリオをパースして有効グラフとして表示する
+- 開発期間: 2022/1 ~
+- 個人開発
+- 使用技術: Rust, VimScript
+複数デバイスの作動と、CLIでの使用を考えてRustを選択しています。RustはWebAssemblyへ変換できるのでWebアプリケーションに組み込むとができます。
+
+Grasは東京大学のSpring Founders Programというスポンサープロジェクトに応募しました。

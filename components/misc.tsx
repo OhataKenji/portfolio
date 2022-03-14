@@ -5,11 +5,11 @@ import MiscItem from './misc-item'
 
 const items = [
     {
-        'title': 'MITの深層学習の講義レポジトリにある正規表現の修正PR',
+        'title': 'MITの深層学習の講義レポジトリにある正規表現の修正プルリクエスト',
         'child': (<span>Juliaで講義中のコードを再実装しようとしていた際に発見した。<Link href={"https://github.com/aamini/introtodeeplearning/pull/65"}><a className="hover:underline">(リンク)</a></Link></span>)
     },
     {
-        'title': 'サバイバルTypeScriptの誤字修正',
+        'title': 'サバイバルTypeScriptの誤字修正プルリクエスト',
         'child': (<span>TypeScript勉強中に発見した。<Link href={'https://github.com/yytypescript/book/pull/13'}><a className="hover:underline">(リンク)</a></Link></span>)
     },
     {

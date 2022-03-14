@@ -5,6 +5,7 @@ import Layout from '../components/layout'
 import { getAllPosts } from '../lib/api'
 import Head from 'next/head'
 import Post from '../types/post'
+import Misc from '../components/misc'
 
 type Props = {
   productArticles: Post[]
@@ -20,6 +21,7 @@ const Index = ({ productArticles }: Props) => {
         <Container>
           <Intro />
           {productArticles.length > 0 && <ProductArticles posts={productArticles} />}
+          <Misc></Misc>
         </Container>
       </Layout>
     </>

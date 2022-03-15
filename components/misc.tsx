@@ -10,7 +10,7 @@ const items = [
     },
     {
         'title': 'サバイバルTypeScriptの誤字修正プルリクエスト',
-        'child': (<span className="text-lg leading-relaxed mb-4">TypeScript勉強中に発見した。<Link href={'https://github.com/yytypescript/book/pull/13'}><a className="hover:underline">(プルリクエストへのリンク)</a></Link></span>)
+        'child': (<span className="text-lg leading-relaxed mb-4">『サバイバルTypeScript』というWebで公開されているTypeScriptの本の誤植を発見した。<Link href={'https://github.com/yytypescript/book/pull/13'}><a className="hover:underline">(プルリクエストへのリンク)</a></Link></span>)
     },
     {
         'title': 'ECサイトの脆弱性報告',

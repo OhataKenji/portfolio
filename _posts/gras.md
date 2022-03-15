@@ -16,6 +16,7 @@ Graphvizを使うと画像として表示できます。
 - 開発期間: 2022/1 ~
 - 個人開発
 - 使用技術: Rust, VimScript
+
 複数デバイスの作動と、CLIでの使用を考えてRustを選択しています。RustはWebAssemblyへ変換できるのでWebアプリケーションに組み込むとができます。
 
 Grasは東京大学のSpring Founders Programというスポンサープロジェクトに応募しました。
